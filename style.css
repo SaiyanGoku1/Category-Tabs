@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Playfair+Display&display=swap");
+
+body {
+  font-family: "Playfair Display", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#btn-container img {
+  background-color: black;
+  width: 10px;
+}
+#btn-container .btn {
+  width: 11rem;
+  height: 2rem;
+  font-weight: bold;
+}
+#item-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.btn {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-enable {
+  background-color: black;
+  color: white;
+}
+
+.card {
+  height: 397px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px;
+  background-color: #fff;
+  padding-bottom: 1rem;
+}
+
+.card img {
+  width: 13rem;
+  height: auto;
+  max-height: 70%; /* Adjust the max-height as needed */
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.about-image {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dress-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.pricing-details {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.pricing-details .old-price {
+  text-decoration: line-through;
+}
+
+.add-to-cart {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+  background-color: #45a049;
+}
+
+@media screen and (max-width: 767px) {
+  #container h1 {
+    font-size: 1.5rem;
+  }
+  #item-container {
+    justify-content: center;
+  }
+  #btn-container {
+    justify-content: space-between;
+    width: 11rem;
+  }
+  #btn-container .btn {
+    margin-top: 0.5rem;
+  }
+}
